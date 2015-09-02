@@ -14,6 +14,7 @@
 		91F0E4D71B8852B600023BA2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91F0E4D61B8852B600023BA2 /* Images.xcassets */; };
 		91F0E4DA1B8852B600023BA2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91F0E4D81B8852B600023BA2 /* LaunchScreen.xib */; };
 		91F0E4E61B8852B600023BA2 /* GolfTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F0E4E51B8852B600023BA2 /* GolfTrackerTests.m */; };
+		91F0E4F41B885E4000023BA2 /* MoneyTrackerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F0E4F31B885E4000023BA2 /* MoneyTrackerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		91F0E4DF1B8852B600023BA2 /* GolfTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GolfTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91F0E4E41B8852B600023BA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91F0E4E51B8852B600023BA2 /* GolfTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GolfTrackerTests.m; sourceTree = "<group>"; };
+		91F0E4F21B885E4000023BA2 /* MoneyTrackerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoneyTrackerViewController.h; sourceTree = "<group>"; };
+		91F0E4F31B885E4000023BA2 /* MoneyTrackerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyTrackerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				91F0E4CE1B8852B600023BA2 /* AppDelegate.m */,
 				91F0E4D01B8852B600023BA2 /* ViewController.h */,
 				91F0E4D11B8852B600023BA2 /* ViewController.m */,
+				91F0E4F21B885E4000023BA2 /* MoneyTrackerViewController.h */,
+				91F0E4F31B885E4000023BA2 /* MoneyTrackerViewController.m */,
 				91F0E4D31B8852B600023BA2 /* Main.storyboard */,
 				91F0E4D61B8852B600023BA2 /* Images.xcassets */,
 				91F0E4D81B8852B600023BA2 /* LaunchScreen.xib */,
@@ -221,6 +226,7 @@
 			files = (
 				91F0E4D21B8852B600023BA2 /* ViewController.m in Sources */,
 				91F0E4CF1B8852B600023BA2 /* AppDelegate.m in Sources */,
+				91F0E4F41B885E4000023BA2 /* MoneyTrackerViewController.m in Sources */,
 				91F0E4CC1B8852B600023BA2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
