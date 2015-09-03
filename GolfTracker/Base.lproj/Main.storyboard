@@ -11,7 +11,8 @@
         <!--Table View Controller-->
         <scene sceneID="bWY-UV-cwH">
             <objects>
-                <tableViewController id="fcc-td-0bQ" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZcU-xH-D9K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="fcc-td-0bQ" customClass="TableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="k1y-hh-CD1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,6 +25,7 @@
                                 <navigationItem title="Start/Continue Round" id="sBW-61-3M9">
                                     <barButtonItem key="rightBarButtonItem" systemItem="add" id="hfv-MI-5vY">
                                         <connections>
+                                            <action selector="addButtonPressed:" destination="fcc-td-0bQ" id="YZb-9N-ggp"/>
                                             <segue destination="vXZ-lx-hvc" kind="show" id="4Nt-FJ-fx2"/>
                                         </connections>
                                     </barButtonItem>
@@ -31,14 +33,14 @@
                             </items>
                         </navigationBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="t6b-go-Cpp">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" id="t6b-go-Cpp">
                                 <rect key="frame" x="0.0" y="136" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t6b-go-Cpp" id="g0F-38-PwW">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.61992432549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -47,15 +49,17 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="b8S-an-6b6"/>
+                    <connections>
+                        <outlet property="allWagersTableView" destination="k1y-hh-CD1" id="PbX-NA-kem"/>
+                    </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZcU-xH-D9K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1288" y="387"/>
         </scene>
-        <!--Choose Amounts-->
+        <!--Set Wager Amounts-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="SetWagerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -64,14 +68,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hole Value" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yuB-SM-hC0">
-                                <rect key="frame" x="317" y="154" width="97" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="97" id="CVA-Pj-PHV"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Long Drive" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YZQ-hi-KuE">
                                 <rect key="frame" x="317" y="208" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -114,6 +110,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hole Value" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yuB-SM-hC0">
+                                <rect key="frame" x="317" y="154" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="CVA-Pj-PHV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.61992432549999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -142,13 +146,20 @@
                             <constraint firstItem="2nM-qW-Zoa" firstAttribute="leading" secondItem="sQP-VN-dsZ" secondAttribute="leading" id="x6o-FX-Wm2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Choose Amounts" id="T8u-UI-6Ka">
+                    <navigationItem key="navigationItem" title="Set Wager Amounts" id="T8u-UI-6Ka">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="JI1-Xi-Ef0">
                             <connections>
+                                <action selector="nextButtonPressed:" destination="vXZ-lx-hvc" id="znF-QF-rSv"/>
                                 <segue destination="ov8-OU-um0" kind="show" id="icd-yB-UxI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="holeValueTextField" destination="yuB-SM-hC0" id="EWN-BM-dnZ"/>
+                        <outlet property="longDriveTextField" destination="YZQ-hi-KuE" id="cnA-fL-YT1"/>
+                        <outlet property="parThreeTextField" destination="zgN-v9-jUv" id="xke-Pa-AkE"/>
+                        <outlet property="sideWagerTextField" destination="gIe-1O-R2O" id="UKh-2R-dfR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,7 +168,7 @@
         <!--$$ Tracker-->
         <scene sceneID="zKL-pf-R4H">
             <objects>
-                <viewController title="$$ Tracker" id="ov8-OU-um0" customClass="MoneyTrackerViewController" sceneMemberID="viewController">
+                <viewController title="$$ Tracker" id="ov8-OU-um0" customClass="WagerTrackerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LUL-LH-7Kb"/>
                         <viewControllerLayoutGuide type="bottom" id="llx-Rd-Sq2"/>
@@ -421,6 +432,7 @@
                     <navigationItem key="navigationItem" title="Wager Score" id="b08-DZ-GJY">
                         <barButtonItem key="rightBarButtonItem" title="Finish Round" id="mAW-Xu-Ofm">
                             <connections>
+                                <action selector="finishRoundButtonPressed:" destination="ov8-OU-um0" id="SJ3-IJ-9NJ"/>
                                 <segue destination="pWe-mj-AAh" kind="show" id="vH1-x6-LAd"/>
                             </connections>
                         </barButtonItem>
@@ -433,7 +445,7 @@
         <!--View Controller-->
         <scene sceneID="InY-BA-Qnv">
             <objects>
-                <viewController id="pWe-mj-AAh" sceneMemberID="viewController">
+                <viewController id="pWe-mj-AAh" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aCR-Z7-HFh"/>
                         <viewControllerLayoutGuide type="bottom" id="Mxc-Nb-0RU"/>
@@ -451,6 +463,7 @@
         <!--Navigation Controller-->
         <scene sceneID="D7f-Vz-bPB">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TRP-AT-zbd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tbm-ig-NS6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mla-2Z-8j5">
@@ -462,7 +475,6 @@
                         <segue destination="fcc-td-0bQ" kind="relationship" relationship="rootViewController" id="ytd-ur-p9S"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TRP-AT-zbd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="625" y="387"/>
         </scene>

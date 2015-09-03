@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MoneyTrackerViewController : UIViewController
+@interface WagerTrackerViewController : UIViewController
 
 @end

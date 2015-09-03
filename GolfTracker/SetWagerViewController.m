@@ -1,18 +1,18 @@
 //
-//  MoneyTrackerViewController.m
+//  SetWagerViewController.m
 //  GolfTracker
 //
-//  Created by Robert Shepperd on 8/22/15.
-//  Copyright (c) 2015 Robert Shepperd. All rights reserved.
+//  Created by Robert Shepperd on 9/3/15.
+//  Copyright © 2015 Robert Shepperd. All rights reserved.
 //
 
-#import "MoneyTrackerViewController.h"
+#import "SetWagerViewController.h"
 
-@interface MoneyTrackerViewController ()
+@interface SetWagerViewController ()
 
 @end
 
-@implementation MoneyTrackerViewController
+@implementation SetWagerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,6 +22,8 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)nextButtonPressed:(id)sender {
 }
 
 /*

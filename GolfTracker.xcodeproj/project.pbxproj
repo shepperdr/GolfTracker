@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		914AD69C1B98FDAF006C234A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914AD69B1B98FDAF006C234A /* TableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		914AD69F1B98FE4F006C234A /* SetWagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914AD69E1B98FE4F006C234A /* SetWagerViewController.m */; settings = {ASSET_TAGS = (); }; };
 		91F0E4CC1B8852B600023BA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F0E4CB1B8852B600023BA2 /* main.m */; };
 		91F0E4CF1B8852B600023BA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F0E4CE1B8852B600023BA2 /* AppDelegate.m */; };
 		91F0E4D21B8852B600023BA2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F0E4D11B8852B600023BA2 /* ViewController.m */; };
@@ -14,7 +16,7 @@
 		91F0E4D71B8852B600023BA2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91F0E4D61B8852B600023BA2 /* Images.xcassets */; };
 		91F0E4DA1B8852B600023BA2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91F0E4D81B8852B600023BA2 /* LaunchScreen.xib */; };
 		91F0E4E61B8852B600023BA2 /* GolfTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F0E4E51B8852B600023BA2 /* GolfTrackerTests.m */; };
-		91F0E4F41B885E4000023BA2 /* MoneyTrackerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F0E4F31B885E4000023BA2 /* MoneyTrackerViewController.m */; };
+		91F0E4F41B885E4000023BA2 /* WagerTrackerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F0E4F31B885E4000023BA2 /* WagerTrackerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		914AD69A1B98FDAF006C234A /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		914AD69B1B98FDAF006C234A /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		914AD69D1B98FE4F006C234A /* SetWagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetWagerViewController.h; sourceTree = "<group>"; };
+		914AD69E1B98FE4F006C234A /* SetWagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetWagerViewController.m; sourceTree = "<group>"; };
 		91F0E4C61B8852B600023BA2 /* GolfTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolfTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91F0E4CA1B8852B600023BA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91F0E4CB1B8852B600023BA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -41,8 +47,8 @@
 		91F0E4DF1B8852B600023BA2 /* GolfTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GolfTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91F0E4E41B8852B600023BA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91F0E4E51B8852B600023BA2 /* GolfTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GolfTrackerTests.m; sourceTree = "<group>"; };
-		91F0E4F21B885E4000023BA2 /* MoneyTrackerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoneyTrackerViewController.h; sourceTree = "<group>"; };
-		91F0E4F31B885E4000023BA2 /* MoneyTrackerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyTrackerViewController.m; sourceTree = "<group>"; };
+		91F0E4F21B885E4000023BA2 /* WagerTrackerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WagerTrackerViewController.h; sourceTree = "<group>"; };
+		91F0E4F31B885E4000023BA2 /* WagerTrackerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WagerTrackerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,9 +94,13 @@
 				91F0E4CE1B8852B600023BA2 /* AppDelegate.m */,
 				91F0E4D01B8852B600023BA2 /* ViewController.h */,
 				91F0E4D11B8852B600023BA2 /* ViewController.m */,
-				91F0E4F21B885E4000023BA2 /* MoneyTrackerViewController.h */,
-				91F0E4F31B885E4000023BA2 /* MoneyTrackerViewController.m */,
+				91F0E4F21B885E4000023BA2 /* WagerTrackerViewController.h */,
+				91F0E4F31B885E4000023BA2 /* WagerTrackerViewController.m */,
 				91F0E4D31B8852B600023BA2 /* Main.storyboard */,
+				914AD69A1B98FDAF006C234A /* TableViewController.h */,
+				914AD69B1B98FDAF006C234A /* TableViewController.m */,
+				914AD69D1B98FE4F006C234A /* SetWagerViewController.h */,
+				914AD69E1B98FE4F006C234A /* SetWagerViewController.m */,
 				91F0E4D61B8852B600023BA2 /* Images.xcassets */,
 				91F0E4D81B8852B600023BA2 /* LaunchScreen.xib */,
 				91F0E4C91B8852B600023BA2 /* Supporting Files */,
@@ -168,7 +178,7 @@
 		91F0E4BE1B8852B600023BA2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Robert Shepperd";
 				TargetAttributes = {
 					91F0E4C51B8852B600023BA2 = {
@@ -224,9 +234,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				914AD69F1B98FE4F006C234A /* SetWagerViewController.m in Sources */,
 				91F0E4D21B8852B600023BA2 /* ViewController.m in Sources */,
 				91F0E4CF1B8852B600023BA2 /* AppDelegate.m in Sources */,
-				91F0E4F41B885E4000023BA2 /* MoneyTrackerViewController.m in Sources */,
+				91F0E4F41B885E4000023BA2 /* WagerTrackerViewController.m in Sources */,
+				914AD69C1B98FDAF006C234A /* TableViewController.m in Sources */,
 				91F0E4CC1B8852B600023BA2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +302,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -355,6 +368,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GolfTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devmountain.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -365,6 +379,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GolfTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devmountain.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -383,6 +398,7 @@
 				);
 				INFOPLIST_FILE = GolfTrackerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devmountain.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GolfTracker.app/GolfTracker";
 			};
@@ -398,6 +414,7 @@
 				);
 				INFOPLIST_FILE = GolfTrackerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devmountain.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GolfTracker.app/GolfTracker";
 			};
