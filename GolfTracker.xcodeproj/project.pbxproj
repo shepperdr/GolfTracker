@@ -422,6 +422,7 @@
 				91F0E4EB1B8852B600023BA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91F0E4EC1B8852B600023BA2 /* Build configuration list for PBXNativeTarget "GolfTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +431,7 @@
 				91F0E4EE1B8852B600023BA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
