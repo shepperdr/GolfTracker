@@ -165,10 +165,10 @@
             </objects>
             <point key="canvasLocation" x="1929" y="387"/>
         </scene>
-        <!--$$ Tracker-->
+        <!--Wager Tracker-->
         <scene sceneID="zKL-pf-R4H">
             <objects>
-                <viewController title="$$ Tracker" id="ov8-OU-um0" customClass="WagerTrackerViewController" sceneMemberID="viewController">
+                <viewController title="Wager Tracker" id="ov8-OU-um0" customClass="WagerTrackerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LUL-LH-7Kb"/>
                         <viewControllerLayoutGuide type="bottom" id="llx-Rd-Sq2"/>
@@ -342,6 +342,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZQ-dj-w55">
+                                <rect key="frame" x="458" y="356" width="46" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveButtonPressed:" destination="ov8-OU-um0" eventType="touchUpInside" id="nq1-ZC-xuc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.61992432549999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -398,6 +405,7 @@
                             <constraint firstItem="Kij-hC-Tax" firstAttribute="baseline" secondItem="lAe-WU-IU5" secondAttribute="baseline" id="Yh9-wr-j8m"/>
                             <constraint firstItem="4a0-5U-SA0" firstAttribute="trailing" secondItem="Lbb-3c-jII" secondAttribute="trailing" id="Z7F-R7-GOC"/>
                             <constraint firstItem="gKV-uJ-4gm" firstAttribute="baseline" secondItem="4a0-5U-SA0" secondAttribute="baseline" id="ZFc-qk-iHQ"/>
+                            <constraint firstItem="LZQ-dj-w55" firstAttribute="top" secondItem="yE8-C9-5Z2" secondAttribute="bottom" constant="17" id="ZtE-nD-f8a"/>
                             <constraint firstItem="wZG-Tt-fHp" firstAttribute="leading" secondItem="Pfi-fX-Our" secondAttribute="leading" id="aas-m8-JFH"/>
                             <constraint firstItem="Pfi-fX-Our" firstAttribute="baseline" secondItem="uxB-Fm-YdJ" secondAttribute="baseline" id="aiX-lr-597"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Fu2-oL-U1q" secondAttribute="trailing" constant="49" id="dAv-BX-aWw"/>
@@ -405,7 +413,9 @@
                             <constraint firstItem="0eh-fO-kz5" firstAttribute="trailing" secondItem="lpf-Nf-mVj" secondAttribute="trailing" id="eER-Wp-rX8"/>
                             <constraint firstItem="uuh-D3-lH9" firstAttribute="trailing" secondItem="zcX-D7-CPp" secondAttribute="trailing" id="eEt-7D-r6p"/>
                             <constraint firstItem="iuX-dB-PeI" firstAttribute="trailing" secondItem="9dg-Um-dAf" secondAttribute="trailing" id="gVc-U6-wHt"/>
+                            <constraint firstItem="LZQ-dj-w55" firstAttribute="centerX" secondItem="yE8-C9-5Z2" secondAttribute="centerX" id="ge4-ys-fZd"/>
                             <constraint firstItem="Fu2-oL-U1q" firstAttribute="trailing" secondItem="iuX-dB-PeI" secondAttribute="trailing" id="gfU-E1-TMn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LZQ-dj-w55" secondAttribute="trailing" constant="76" id="hgQ-kO-0ba"/>
                             <constraint firstItem="vyH-mf-3Gd" firstAttribute="top" secondItem="de7-tL-h8Q" secondAttribute="bottom" constant="20" id="mn4-aQ-X4i"/>
                             <constraint firstItem="9dg-Um-dAf" firstAttribute="leading" secondItem="iuX-dB-PeI" secondAttribute="leading" id="mr2-bP-8na"/>
                             <constraint firstItem="oGo-02-Mhi" firstAttribute="leading" secondItem="YsI-ze-7RT" secondAttribute="leading" id="n24-i4-QFV"/>
