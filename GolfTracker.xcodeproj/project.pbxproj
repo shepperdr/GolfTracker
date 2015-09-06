@@ -11,7 +11,6 @@
 		914AD69F1B98FE4F006C234A /* SetWagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914AD69E1B98FE4F006C234A /* SetWagerViewController.m */; settings = {ASSET_TAGS = (); }; };
 		91F0E4CC1B8852B600023BA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F0E4CB1B8852B600023BA2 /* main.m */; };
 		91F0E4CF1B8852B600023BA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F0E4CE1B8852B600023BA2 /* AppDelegate.m */; };
-		91F0E4D21B8852B600023BA2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F0E4D11B8852B600023BA2 /* ViewController.m */; };
 		91F0E4D51B8852B600023BA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F0E4D31B8852B600023BA2 /* Main.storyboard */; };
 		91F0E4D71B8852B600023BA2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91F0E4D61B8852B600023BA2 /* Images.xcassets */; };
 		91F0E4DA1B8852B600023BA2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91F0E4D81B8852B600023BA2 /* LaunchScreen.xib */; };
@@ -39,8 +38,6 @@
 		91F0E4CB1B8852B600023BA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		91F0E4CD1B8852B600023BA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		91F0E4CE1B8852B600023BA2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		91F0E4D01B8852B600023BA2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		91F0E4D11B8852B600023BA2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		91F0E4D41B8852B600023BA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91F0E4D61B8852B600023BA2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		91F0E4D91B8852B600023BA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -92,15 +89,13 @@
 			children = (
 				91F0E4CD1B8852B600023BA2 /* AppDelegate.h */,
 				91F0E4CE1B8852B600023BA2 /* AppDelegate.m */,
-				91F0E4D01B8852B600023BA2 /* ViewController.h */,
-				91F0E4D11B8852B600023BA2 /* ViewController.m */,
 				91F0E4F21B885E4000023BA2 /* WagerTrackerViewController.h */,
 				91F0E4F31B885E4000023BA2 /* WagerTrackerViewController.m */,
-				91F0E4D31B8852B600023BA2 /* Main.storyboard */,
 				914AD69A1B98FDAF006C234A /* TableViewController.h */,
 				914AD69B1B98FDAF006C234A /* TableViewController.m */,
 				914AD69D1B98FE4F006C234A /* SetWagerViewController.h */,
 				914AD69E1B98FE4F006C234A /* SetWagerViewController.m */,
+				91F0E4D31B8852B600023BA2 /* Main.storyboard */,
 				91F0E4D61B8852B600023BA2 /* Images.xcassets */,
 				91F0E4D81B8852B600023BA2 /* LaunchScreen.xib */,
 				91F0E4C91B8852B600023BA2 /* Supporting Files */,
@@ -235,7 +230,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				914AD69F1B98FE4F006C234A /* SetWagerViewController.m in Sources */,
-				91F0E4D21B8852B600023BA2 /* ViewController.m in Sources */,
 				91F0E4CF1B8852B600023BA2 /* AppDelegate.m in Sources */,
 				91F0E4F41B885E4000023BA2 /* WagerTrackerViewController.m in Sources */,
 				914AD69C1B98FDAF006C234A /* TableViewController.m in Sources */,
