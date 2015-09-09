@@ -29,8 +29,14 @@
 }
 
 - (IBAction)saveButtonPressed:(id)sender {
+    NSString *playerOneSaveString = self.playerOneTextField.text;
+    [[NSUserDefaults standardUserDefaults]setObject:playerOneSaveString forKey:@"playerOneSaveString"];
+    [[NSUserDefaults standardUserDefaults]synchronize];
+
     
 }
+
+
 
 /*
 #pragma mark - Navigation

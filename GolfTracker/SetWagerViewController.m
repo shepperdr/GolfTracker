@@ -10,12 +10,20 @@
 
 @interface SetWagerViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *date;
+
 @end
 
 @implementation SetWagerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSDate *currentDate = [NSDate date];
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"MM/dd/yy"];
+    self.date.text = [dateFormat stringFromDate:currentDate];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -25,9 +33,9 @@
 }
 - (IBAction)nextButtonPressed:(id)sender {
     
-    
-    
 }
+
+
 
 /*
 #pragma mark - Navigation
