@@ -9,6 +9,7 @@
 #import "SetWagerViewController.h"
 
 @interface SetWagerViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *time;
 
 @property (weak, nonatomic) IBOutlet UILabel *date;
 
@@ -23,8 +24,9 @@
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
     [dateFormat setDateFormat:@"MM/dd/yy"];
     self.date.text = [dateFormat stringFromDate:currentDate];
+    [dateFormat setDateFormat:@"HH:mm"];
+    self.time.text = [dateFormat stringFromDate:currentDate];
     
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {

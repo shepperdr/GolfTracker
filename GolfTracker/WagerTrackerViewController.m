@@ -16,6 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSLog(@"%@", self.playerOneHole);
+    
     // Do any additional setup after loading the view.
 }
 
@@ -24,9 +27,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)finishRoundButtonPressed:(id)sender {
-    
-}
+
 
 - (IBAction)saveButtonPressed:(id)sender {
     NSString *playerOneSaveString = self.playerOneTextField.text;
