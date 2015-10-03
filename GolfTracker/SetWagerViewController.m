@@ -7,6 +7,7 @@
 //
 
 #import "SetWagerViewController.h"
+#import "WagerTrackerViewController.h"
 
 @interface SetWagerViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *time;
@@ -24,8 +25,16 @@
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
     [dateFormat setDateFormat:@"MM/dd/yy"];
     self.date.text = [dateFormat stringFromDate:currentDate];
-    [dateFormat setDateFormat:@"HH:mm"];
+    [dateFormat setDateFormat:@"hh:mm"];
+    [dateFormat setLocale:[NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"]];
     self.time.text = [dateFormat stringFromDate:currentDate];
+   
+    self.holeValueTextField.delegate = self;
+    self.longDriveTextField.delegate = self;
+    self.parThreeTextField.delegate = self;
+    self.sideWagerTextField.delegate = self;
+    self.courseTextField.delegate = self;
+    
     
 }
 
@@ -33,11 +42,28 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)nextButtonPressed:(id)sender {
-  
+//- (IBAction)nextButtonPressed:(id)sender {
+//  
+//    remove once other button is set
+//}
+
+- (IBAction)nextFromSetWager:(id)sender {
+    WagerTrackerViewController *wagerTracker = [self.storyboard instantiateViewControllerWithIdentifier:@"WagerTracker"];
+    wagerTracker.holeStringFromFromSetWager = self.holeValueTextField.text;
+    wagerTracker.longDriveString = self.longDriveTextField.text;
+    wagerTracker.parThreeString = self.parThreeTextField.text;
+    wagerTracker.sideWagerString = self.sideWagerTextField.text;
+    [self presentViewController:wagerTracker animated:YES completion:nil];
+    
+    
+    
     
 }
 
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+     return [self.holeValueTextField resignFirstResponder], [self.longDriveTextField resignFirstResponder], [self.parThreeTextField resignFirstResponder], [self.sideWagerTextField resignFirstResponder], [self.courseTextField resignFirstResponder];
+    
+}
 
 
 /*

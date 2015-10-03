@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SetWagerViewController : UIViewController
+@interface SetWagerViewController : UIViewController<UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *holeValueTextField;
 @property (weak, nonatomic) IBOutlet UITextField *longDriveTextField;
 @property (weak, nonatomic) IBOutlet UITextField *parThreeTextField;
 @property (weak, nonatomic) IBOutlet UITextField *sideWagerTextField;
+- (IBAction)nextFromSetWager:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *courseTextField;
 
 @end
