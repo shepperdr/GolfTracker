@@ -50,14 +50,9 @@
     
     
 }
+-(void)textFieldDidEndEditing:(UITextField *)textField {
 
 
-
-- (IBAction)saveButtonPressed:(id)sender {
-//    NSString *playerOneSaveString = self.playerOneTextField.text;
-//    [[NSUserDefaults standardUserDefaults]setObject:playerOneSaveString forKey:@"playerOneSaveString"];
-//    [[NSUserDefaults standardUserDefaults]synchronize];
-    
     self.playerOneTotal.text = [NSString stringWithFormat:@"%d", ([self.playerOneHole.text intValue])*([self.holeStringFromFromSetWager intValue])+([self.playerOneLongdrive.text intValue])*([self.longDriveString intValue])+([self.playerOneParThree.text intValue])*([self.parThreeString intValue])+([self.playerOneSideWager.text intValue])*([self.sideWagerString intValue])];
     
     self.playerTwoTotal.text = [NSString stringWithFormat:@"%d",([self.playerTwoHole.text intValue])*([self.holeStringFromFromSetWager intValue])+([self.playerTwoLongdrive.text intValue])*([self.longDriveString intValue])+([self.playerTwoParThree.text intValue])*([self.parThreeString intValue])+([self.playerTwoSideWager.text intValue])*([self.sideWagerString intValue])];
@@ -65,6 +60,13 @@
     self.playerThreeTotal.text = [NSString stringWithFormat:@"%d",([self.playerThreeHole.text intValue])*([self.holeStringFromFromSetWager intValue])+([self.playerThreeLongdrive.text intValue])*([self.longDriveString intValue])+([self.playerThreeParThree.text intValue])*([self.parThreeString intValue])+([self.playerThreeSideWager.text intValue])*([self.sideWagerString intValue])];
     
     self.playerFourTotal.text = [NSString stringWithFormat:@"%d",([self.playerFourHole.text intValue])*([self.holeStringFromFromSetWager intValue])+([self.playerFourLongdrive.text intValue])*([self.longDriveString intValue])+([self.playerFourParThree.text intValue])*([self.parThreeString intValue])+([self.playerFourSideWager.text intValue])*([self.sideWagerString intValue])];
+}
+- (IBAction)saveButtonPressed:(id)sender {
+//    NSString *playerOneSaveString = self.playerOneTextField.text;
+//    [[NSUserDefaults standardUserDefaults]setObject:playerOneSaveString forKey:@"playerOneSaveString"];
+//    [[NSUserDefaults standardUserDefaults]synchronize];
+    
+   
     
     printf("Save button tapped on wager page%*s",15, "");
     
