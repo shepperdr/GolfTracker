@@ -48,11 +48,6 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *saveButton;
 
-
-
-
-
-
 @property (strong, nonatomic) NSString *course;
 @property (strong, nonatomic) NSString *holeStringFromFromSetWager;
 @property (strong, nonatomic) NSString *longDriveString;
@@ -64,6 +59,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *parThreeFromSetWager;
 @property (weak, nonatomic) IBOutlet UILabel *sideWagerFromSetWager;
 
+@property (weak, nonatomic) IBOutlet UILabel *playerOneGetsOwes;
+@property (weak, nonatomic) IBOutlet UILabel *playerTwoGetsOwes;
+@property (weak, nonatomic) IBOutlet UILabel *playerThreeGetsOwes;
+@property (weak, nonatomic) IBOutlet UILabel *playerFourGetsOwes;
 
 
 

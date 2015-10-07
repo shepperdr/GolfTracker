@@ -60,6 +60,16 @@
     self.playerThreeTotal.text = [NSString stringWithFormat:@"%d",([self.playerThreeHole.text intValue])*([self.holeStringFromFromSetWager intValue])+([self.playerThreeLongdrive.text intValue])*([self.longDriveString intValue])+([self.playerThreeParThree.text intValue])*([self.parThreeString intValue])+([self.playerThreeSideWager.text intValue])*([self.sideWagerString intValue])];
     
     self.playerFourTotal.text = [NSString stringWithFormat:@"%d",([self.playerFourHole.text intValue])*([self.holeStringFromFromSetWager intValue])+([self.playerFourLongdrive.text intValue])*([self.longDriveString intValue])+([self.playerFourParThree.text intValue])*([self.parThreeString intValue])+([self.playerFourSideWager.text intValue])*([self.sideWagerString intValue])];
+    
+    
+    
+    self.playerOneGetsOwes.text = [NSString stringWithFormat:@"%d", ([self.playerOneTotal.text intValue]*3)+-([self.playerTwoTotal.text intValue])+-([self.playerThreeTotal.text intValue])+-([self.playerFourTotal.text intValue])];
+    
+    self.playerTwoGetsOwes.text = [NSString stringWithFormat:@"%d", ([self.playerTwoTotal.text intValue]*3)+-([self.playerOneTotal.text intValue]) +- ([self.playerThreeTotal.text intValue])+-([self.playerFourTotal.text intValue])];
+    
+    self.playerThreeGetsOwes.text = [NSString stringWithFormat:@"%d", ([self.playerThreeTotal.text intValue]*3)+-([self.playerOneTotal.text intValue])+-([self.playerTwoTotal.text intValue])+-([self.playerFourTotal.text intValue])];
+    
+    self.playerFourGetsOwes.text = [NSString stringWithFormat:@"%d", ([self.playerFourTotal.text intValue]*3)+-([self.playerOneTotal.text intValue])+-([self.playerTwoTotal.text intValue])+-([self.playerThreeTotal.text intValue])];
 }
 - (IBAction)saveButtonPressed:(id)sender {
 //    NSString *playerOneSaveString = self.playerOneTextField.text;
