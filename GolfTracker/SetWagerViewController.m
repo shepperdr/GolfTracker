@@ -33,7 +33,6 @@
     self.longDriveTextField.delegate = self;
     self.parThreeTextField.delegate = self;
     self.sideWagerTextField.delegate = self;
-    self.courseTextField.delegate = self;
     
     
 }
@@ -61,7 +60,7 @@
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField {
-     return [self.holeValueTextField resignFirstResponder], [self.longDriveTextField resignFirstResponder], [self.parThreeTextField resignFirstResponder], [self.sideWagerTextField resignFirstResponder], [self.courseTextField resignFirstResponder];
+     return [self.holeValueTextField resignFirstResponder], [self.longDriveTextField resignFirstResponder], [self.parThreeTextField resignFirstResponder], [self.sideWagerTextField resignFirstResponder];
     
 }
 

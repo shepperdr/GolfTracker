@@ -39,14 +39,10 @@
 @property (weak, nonatomic) IBOutlet UITextField *playerFourParThree;
 @property (weak, nonatomic) IBOutlet UITextField *playerFourSideWager;
 
-
 @property (weak, nonatomic) IBOutlet UILabel *playerOneTotal;
-
 @property (weak, nonatomic) IBOutlet UILabel *playerTwoTotal;
 @property (weak, nonatomic) IBOutlet UILabel *playerThreeTotal;
 @property (weak, nonatomic) IBOutlet UILabel *playerFourTotal;
-
-@property (weak, nonatomic) IBOutlet UIButton *saveButton;
 
 @property (strong, nonatomic) NSString *course;
 @property (strong, nonatomic) NSString *holeStringFromFromSetWager;

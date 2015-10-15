@@ -15,6 +15,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *parThreeTextField;
 @property (weak, nonatomic) IBOutlet UITextField *sideWagerTextField;
 - (IBAction)nextFromSetWager:(id)sender;
-@property (weak, nonatomic) IBOutlet UITextField *courseTextField;
+
 
 @end
