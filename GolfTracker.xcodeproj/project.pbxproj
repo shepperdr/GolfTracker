@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		914AD69C1B98FDAF006C234A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914AD69B1B98FDAF006C234A /* TableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		914AD69F1B98FE4F006C234A /* SetWagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914AD69E1B98FE4F006C234A /* SetWagerViewController.m */; settings = {ASSET_TAGS = (); }; };
-		91818E8B1BA0DA97009DC3B2 /* Screen Shot 2015-08-31 at 4.59.03 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 91818E8A1BA0DA97009DC3B2 /* Screen Shot 2015-08-31 at 4.59.03 PM.png */; settings = {ASSET_TAGS = (); }; };
+		914AD69C1B98FDAF006C234A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914AD69B1B98FDAF006C234A /* TableViewController.m */; };
+		914AD69F1B98FE4F006C234A /* SetWagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914AD69E1B98FE4F006C234A /* SetWagerViewController.m */; };
+		91818E8B1BA0DA97009DC3B2 /* Screen Shot 2015-08-31 at 4.59.03 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 91818E8A1BA0DA97009DC3B2 /* Screen Shot 2015-08-31 at 4.59.03 PM.png */; };
 		91F0E4CC1B8852B600023BA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F0E4CB1B8852B600023BA2 /* main.m */; };
 		91F0E4CF1B8852B600023BA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F0E4CE1B8852B600023BA2 /* AppDelegate.m */; };
 		91F0E4D51B8852B600023BA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F0E4D31B8852B600023BA2 /* Main.storyboard */; };
@@ -181,6 +181,7 @@
 				TargetAttributes = {
 					91F0E4C51B8852B600023BA2 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 9FW2H5V3G5;
 					};
 					91F0E4DE1B8852B600023BA2 = {
 						CreatedOnToolsVersion = 6.4;
@@ -364,11 +365,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GolfTracker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.devmountain.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -376,11 +380,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GolfTracker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.devmountain.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

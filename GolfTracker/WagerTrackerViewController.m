@@ -71,6 +71,12 @@
     
     self.playerFourGetsOwes.text = [NSString stringWithFormat:@"%d", ([self.playerFourTotal.text intValue]*3)+-([self.playerOneTotal.text intValue])+-([self.playerTwoTotal.text intValue])+-([self.playerThreeTotal.text intValue])];
 }
+- (IBAction)backButtonTapped:(UIButton *)sender {
+    [self dismissViewControllerAnimated:true completion:nil];
+    
+
+}
+
 
 
 
