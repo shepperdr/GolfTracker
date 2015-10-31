@@ -5,7 +5,6 @@
 //  Created by Robert Shepperd on 8/22/15.
 //  Copyright (c) 2015 Robert Shepperd. All rights reserved.
 //
-#warning GO LOOK AT PERSON LIST PROJECT. i need to set my relationships up like that project.
 
 #import "WagerTrackerViewController.h"
 #import "SetWagerViewController.h"

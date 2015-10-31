@@ -11,6 +11,7 @@
 
 @interface SetWagerViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *time;
+@property (weak, nonatomic) IBOutlet UIImageView *image;
 
 @property (weak, nonatomic) IBOutlet UILabel *date;
 
@@ -37,15 +38,6 @@
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-//- (IBAction)nextButtonPressed:(id)sender {
-//  
-//    remove once other button is set
-//}
-
 - (IBAction)nextFromSetWager:(id)sender {
     WagerTrackerViewController *wagerTracker = [self.storyboard instantiateViewControllerWithIdentifier:@"WagerTracker"];
     wagerTracker.holeStringFromFromSetWager = self.holeValueTextField.text;
@@ -54,15 +46,39 @@
     wagerTracker.sideWagerString = self.sideWagerTextField.text;
     [self presentViewController:wagerTracker animated:YES completion:nil];
     
-    
-    
-    
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField {
      return [self.holeValueTextField resignFirstResponder], [self.longDriveTextField resignFirstResponder], [self.parThreeTextField resignFirstResponder], [self.sideWagerTextField resignFirstResponder];
     
 }
+//-(BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidShow:) name:UIKeyboardDidShowNotification object:nil];
+//    return YES;
+//}
+//
+//- (BOOL)textFieldShouldEndEditing:(UITextField *)textField {
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidHide:) name:UIKeyboardDidHideNotification object:nil];
+//    
+//    [self.view endEditing:YES];
+//    [self.image endEditing:YES];
+//    
+//    return YES;
+//}
+//
+//
+//- (void)keyboardDidShow:(NSNotification *)notification
+//{
+//    // Assign new frame to your view
+//    [self.view setFrame:CGRectMake(0,-90,320,460)];
+//}
+//
+//-(void)keyboardDidHide:(NSNotification *)notification {
+//    
+//    [self.view setFrame:CGRectMake(0,0,320,460)];
+//    [self.image setFrame:CGRectMake(0, 0, 320, 480)];
+//    
+//}
 
 
 /*
